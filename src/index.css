@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none; 
+    
+}
+
+body {
+background: url("/src/img/colored_body_top.png") center top no-repeat #1b2838;
+background-color: rgba(27,40,56);
+background-image: url("/src/img/colored_body_top.png");
+font-family:Arial, Helvetica, sans-serif ;
+color:  #c6d4df;
+}
+
+.container{
+    max-width: 11100px ;
+    margin: 0 auto;
+}
+
+.back{
+    padding: 50px 0;
+    background-color: #1b2838;
+}
+.menu {
+    position: absolute;
+    display: flex;
+    top:30px;
+    left:0;
+    right:0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+}
+
+.logo{
+    
+    float:left;
+    width: 176px;    
+    height: 44px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+.menu .navbar ul li a {
+    font-size: 16px;
+    padding: 10px;
+    color: #FFFFFF;
+    
+    
+}
+
+.menu .navbar ul li a:hover{
+    color: #1120f4;
+
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 35px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:989px){
+    .menu{
+        padding:10px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 50px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background-color:  #1b2838;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+/* Menu flotante */
+.fondo{
+    background:url("/src/img/juegos_de_semana.jpg")center top no-repeat;
+    background-size: 100% 100%;
+    padding:220px 0 ;
+
+}
+
+.menu_flo{
+    background-color: #1120f4;
+    position: absolute;
+    
+}
+
+
